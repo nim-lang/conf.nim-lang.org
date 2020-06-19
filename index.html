@@ -101,7 +101,7 @@
           <p>Each talk will premiere on our YouTube channel as a part of <a href="https://www.youtube.com/playlist?list=PLxLdEZg8DRwTIEzUpfaIcBqhsj09mLWHx">NimConf 2020 playlist</a>.</p>
         </div>
         <div class="five columns">
-          <div class="u-center">
+          <div class="u-center" id="countdowncontainer">
             <h4>Streaming live in:</h4>
             <p>
               <table class="countdowntable">
@@ -263,6 +263,7 @@
     <script>
       // Set the date we're counting down to
       var countDownDate = new Date(Date.UTC(2020, 5, 20, 11)).getTime();
+      var endDate = new Date(Date.UTC(2020, 5, 20, 20)).getTime();
 
       var update = function() {
 
@@ -284,8 +285,12 @@
 
         // If the count down is over, write some text
         if (distance < 0) {
-          clearInterval(x);
-          document.getElementById("demo").innerHTML = "EXPIRED";
+          if (endDate - now >= 0) {
+            document.getElementById("countdowncontainer").innerHTML = '<h4>NimConf is live!</h4><iframe width="560" height="315" src="https://www.youtube.com/embed/lxLL3km21Aw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><p>Head over to the YouTube channel to discuss live with the presenters!</p>';
+          } else {
+            document.getElementById("countdowncontainer").innerHTML = '<h4>NimConf is over for now</h4><iframe width="560" height="315" src="https://www.youtube.com/embed/lxLL3km21Aw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><p>Head over to the YouTube channel to watch the recorded talks with comments! And welcome back for NimConf 2021</p>';
+            clearInterval(x);
+          }
         }
       };
       // Update the count down every 1 second
