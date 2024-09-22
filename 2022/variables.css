@@ -1,0 +1,101 @@
+/*
+* Skeletal V1.0.0
+* Copyright 2019, Peter Munch-Ellingsen
+* skeleton.peterme.net
+* Free to use under the MIT license.
+* http://www.opensource.org/licenses/mit-license.php
+* 22/10/2019
+*
+* Based on Skeleton v2.0.4
+* Copyright 2014, Dave Gamache
+* www.getskeleton.com
+* Free to use under the MIT license.
+* http://www.opensource.org/licenses/mit-license.php
+* 12/29/2014
+*/
+
+
+/* Variables
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+:root {
+  /* Globals */
+  --line-height: calc(1em * 1.7); /* Set this way so it can be used in calculations */
+  --element-padding: 8px;
+  --element-border: 1px;
+  --element-height: calc(var(--line-height) + var(--element-padding)*2 + var(--element-border)*2);
+  --border-radius: 4px;
+  --main-color: #33C3F0;
+  --main-color-contrast: #FFF;
+  --activated-color: #1EAEDB;
+  --activated-color-contrast: #FFF;
+  /* Basics */
+  --container-max-width: 1200px;
+  --text-color: #fff;
+  --link-color: #ffe953;
+  --link-color-hover: #f1fa8c;
+  --background-color: #1e202a;
+  --font-family: "Open Sans", sans;
+  --font-size: 1.8rem;
+  --font-weight: 400;
+  --heading-base-size: var(--font-size);
+  --heading-increase-pitch: 0.7rem;
+  --heading-increase-pitch-phone: 0.5rem;
+  --heading-base-line-height: 1.6;
+  --heading-decrease-pitch: 0.08;
+  --heading-font-family: "Titillium Web";
+  --heading-color: #ffe953;
+  --heading-margin: 1.8rem;
+  /* Buttons */
+  --button-height: var(--element-height);
+  --button-line-height: calc(var(--element-height) - var(--element-border));
+  --button-border: var(--element-border) solid;
+  --button-border-radius: var(--border-radius);
+  --button-padding-leftright: 30px;
+  /* Basic button */
+  --button-color: #555;
+  --button-background-color: var(--background-color);
+  --button-border-color: #bbb;
+  --button-color-focus: #333;
+  --button-background-color-focus: var(--background-color);
+  --button-border-color-focus: #888;
+  /* Primary button */
+  --button-primary-color: var(--main-color-contrast);
+  --button-primary-background-color: var(--main-color);
+  --button-primary-border-color: var(--main-color);
+  --button-primary-color-focus: var(--activated-color-contrast);
+  --button-primary-background-color-focus: var(--activated-color);
+  --button-primary-border-color-focus: var(--activated-color);
+  /* Forms */
+  --input-padding-topbottom: var(--element-padding);
+  --input-padding-leftright: 10px;
+  --input-height: var(--element-height);
+  --textarea-min-height: calc((var(--element-height) - var(--element-padding) - var(--element-border))*2);
+  --input-border: var(--element-border) solid;
+  --input-border-color: #D1D1D1;
+  --input-border-color-focus: var(--main-color);
+  --input-border-radius: var(--border-radius);
+  --input-color: var(--text-color);
+  --input-background-color: var(--background-color);
+  --placeholder-color: var(--text-color);
+  --placeholder-opacity: 0.8;
+  /* Code */
+  --code-color: var(--text-color);
+  --code-background-color: #FAFAFA;
+  --code-border: var(--element-border) solid;
+  --code-border-color: #E1E1E1;
+  --code-border-radius: var(--border-radius);
+  --code-block-color: var(--code-color);
+  --code-block-background-color: var(--code-background-color);
+  --code-block-border: var(--code-border);
+  --code-block-border-color: var(--code-border-color);
+  --code-block-border-radius: var(--code-border-radius);
+  /* Tables */
+  --td-border-bottom: 0px solid #E1E1E1;
+  /* Horizontal rule */
+  --hr-border-top: 0px solid #E1E1E1;
+  /* Navbar */
+  --navbar-border-top: 1px solid #E1E1E1;
+  --navbar-border-bottom: 1px solid #E1E1E1;
+  /* Hero */
+  --hero-padding: 6vh;
+}
